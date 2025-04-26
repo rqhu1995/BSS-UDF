@@ -1,0 +1,17 @@
+# Ignore cache directory and its subfolders
+.cache/
+
+# Ignore build directory and its subfolders
+build/
+
+# Ignore .clangd files
+.clangd
+
+# Ignore data directory and its subfolders
+data/
+
+# Ignore CMakePresets.json
+CMakePresets.json
+
+# Ignore Jupyter notebooks in the current directory
+*.ipynb
