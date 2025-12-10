@@ -38,7 +38,7 @@ double UDFCalculator::calculateUDF(const Station& station, int initialInventory,
         double returnRate = station.getReturnRate(timeSlot);
 
         // Calculate transition matrix for this period
-        Eigen::MatrixXd P = calculateTransitionMatrix(rentalRate, returnRate, capacity, (timeSlot + 1) * deltaTime);
+        Eigen::MatrixXd P = calculateTransitionMatrix(rentalRate, returnRate, capacity, deltaTime);
 
         // Update transition probability
         transitionProb = transitionProb * P;
